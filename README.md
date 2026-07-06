@@ -10,7 +10,8 @@ The goal is to simulate how actual data analysts in the e-commerce or retail ind
 ✅ Implement Data Cleaning to handle null values, remove invalid entries, and convert pricing from paise to rupees
 
 ✅ Write business-driven SQL queries to derive insights around pricing, inventory, stock availability, revenue and more
-📁 Dataset Overview
+#📁 Dataset Overview
+
 The dataset was sourced from Kaggle and was originally scraped from Zepto’s official product listings. It mimics what you’d typically encounter in a real-world e-commerce inventory system.
 
 Each row represents a unique SKU (Stock Keeping Unit) for a product. Duplicate product names exist because the same product may appear multiple times in different package sizes, weights, discounts, or categories to improve visibility – exactly how real catalog data looks.
@@ -25,7 +26,9 @@ discountedSellingPrice: Final price after discount (also converted to ₹)
 availableQuantity: Units available in inventory
 weightInGms: Product weight in grams
 outOfStock: Boolean flag indicating stock availability
-quantity: Number of units per package (mixed with grams for loose produce)   
+quantity: Number of units per package (mixed with grams for loose produce)
+
+
 🔍 Data Exploration
 . Counted the total number of records in the dataset
 
@@ -39,10 +42,12 @@ quantity: Number of units per package (mixed with grams for loose produce)
 
 . Detected products present multiple times, representing different SKUs
 
+
 4. 🧹 Data Cleaning
 Identified and removed rows where MRP or discounted selling price was zero
 
 Converted mrp and discountedSellingPrice from paise to rupees for consistency and readability
+
 
 5. 📊 Business Insights
 . Found top 10 best-value products based on discount percentage
